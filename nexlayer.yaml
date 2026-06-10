@@ -1,0 +1,14 @@
+application:
+  name: just-wave-dungeon-revealer
+  pods:
+    - name: app
+      image: "# filled by pipeline"
+      path: /
+      servicePorts:
+        - 3000
+      vars:
+        NODE_ENV: production
+        PORT: "3000"
+        HOSTNAME: "0.0.0.0"
+        DM_PASSWORD: ""
+        PC_PASSWORD: ""
